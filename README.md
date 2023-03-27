@@ -1,6 +1,6 @@
 #Overview
 This project implements a simple prefix tree (`DictionaryTrie`). The tree consists of `CharacterNodes`, each holding a list of its children. The nodes hold caches of words that are reachable from them.
-See the docstrings for details
+See the docstrings for details.
 
 #Performance considerations
 ##Memory
@@ -11,7 +11,7 @@ Assuming that a String occupies 2 + 2*string.length() of bytes in a memory, we c
 875 000 * 210 ~= 184 000 000 bytes ~= 184 000 kB ~= 184 MB.
 
 ##Complexity
-Adding a word and incrementing its hit is O(2n), where n is the length of the word.
+Adding a word and incrementing its hit has a complexity of O(n), where n is the length of the word.
 Reading a list of autocompletions has a complexity of O(n), where n is the length of the prefix.
 
 #API assumptions:
